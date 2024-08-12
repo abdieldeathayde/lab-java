@@ -1,12 +1,20 @@
 package engtelecom.recursos;
 
-@Path("olamundo")
+import jdk.jfr.ContentType;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import java.net.URI;
+@GetMapping(value = "/olamundo")
+@PathVariable(value = ("/olamundo"))
+
 public class OlaMundo {
 
-    @Context
-    private UriInfo context;
+    @ContentType
+    private URInfo context;
 
     public OlaMundo() {
+
     }
 
     @GET

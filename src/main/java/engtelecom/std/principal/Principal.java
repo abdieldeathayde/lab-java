@@ -2,15 +2,16 @@ package engtelecom.std.principal;
 
 public class Principal {
 
-    ClienteRest c = new ClienteRest();
-    System.out.println(c.olaJSON());
-    System.out.println(c.olaTexto());
-    System.out.println(c.olaXML());
-    System.out.println(c.olaOutroXML("STD"));
-    c.close();
-
 
     public static void main(String[] args) {
+        ClienteRest c = new ClienteRest();
+        System.out.println(c.olaJSON());
+        System.out.println(c.olaTexto());
+        System.out.println(c.olaXML());
+        System.out.println(c.olaOutroXML("STD"));
+        c.close();
+
+
         int i = somar(10, 2);
         int j = subtrair(10, 2);
         System.out.println("i: " + i + ", j: " + j);
